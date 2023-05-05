@@ -1,0 +1,224 @@
+html{
+    font-size: 18px;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0rem;
+    background-color: #333333;
+}
+/*---------------------------------- navbar css -------------------------------------------*/
+.navsec1list,.navsec2list{
+    margin: 0rem;
+    padding: 0rem;
+    list-style-type: none;
+    display: flex;
+}
+.navlistitem{
+    font-size: 15px;
+    background-color:#333333;
+    color: #e0d6c2;
+    border: 1px #B1A592 solid;
+    border-radius: 38px;
+    font-weight: 400;
+    padding: 0.6rem;
+    text-align: center;
+}
+.navbar{
+    background-color: #333333;
+    padding: 0.3rem;
+}
+.desktopbtn{
+    display: none;
+}
+.navsec1{
+    width: 100%;
+    border: 1px #B1A592 solid;
+    border-radius: 30px;
+}
+#muesosans{
+    width: 100%;
+}
+#muesosans{
+    width: 100%;
+}
+#muesosansbtn{
+    background-color: #323025;
+    width: 100%;border: none;
+}
+#menu{
+    width: 6rem;
+}
+/*---------------------------------- mainbody css -------------------------------------------*/
+.h{
+    font-weight: 300;
+    font-size: 18px;
+    padding: 0rem 0.3rem 0rem 0.3rem;
+    border: 1px #323025 solid;
+    display: inline-block;
+    border-radius: 15px;
+    margin: 1rem 0rem 2rem 1rem;
+}
+.birmingham{
+    background-color: #DFD6C5;
+}
+.slicingbread{
+    background-color: #8E886D;
+}
+.ladywhite{
+    background-color: #916E58;
+}
+.gallilio{
+    background-color: #B1A48E;
+}
+.secheader{
+    font-weight: 700;
+    font-size: 23px;
+    margin: 0rem 0rem 1.5rem 1rem;
+}
+.demo{
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    margin-bottom: 1.4rem;
+    overflow: hidden;
+}
+.demoimg{
+    width: 100%;
+    max-height: 50vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform .4s;
+}
+.getstarted{
+    display: flex;
+    margin-left: 1rem;
+    margin: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.underline{
+    width: 100%;
+    height: 2px;
+    background-color: #333333;
+    display: block;
+    
+}
+.birmingham, .slicingbread, .gallilio, .ladywhite{
+    border-radius: 40px;
+    margin: 1rem 0.3rem 0rem 0.3rem;
+    padding: 0.3rem;
+    
+}
+p{
+    margin: 0rem;
+}
+.seccontent{
+    margin: 0rem 0rem 1rem 1rem;
+}
+.secgaliimg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.getstartedgal{
+    position: absolute;
+    bottom: 0rem;
+    margin: 1rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.getstartedbir{
+    position: absolute;
+    bottom: 0rem;
+    width: 90%;
+}
+
+#buttonh:hover{
+    background-color: #B1A592;
+    color: #333333;
+}
+.birmingham:hover .demoimg
+{
+    transform: scale(1.5);
+}
+.ladywhite:hover .demoimg
+{
+    transform: scale(1.5);
+}
+.slicingbread:hover .demoimg
+{
+    transform: scale(1.5);
+}
+.gallilio:hover .galimg
+{
+    transform: scale(1.5);
+}
+
+/* --------------------------------------mediaqueries---------------------------------------------- */
+@media only screen and (min-width: 540px){
+    .maingrid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto;
+    }
+    #grid-item-1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #grid-item-2{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .galimg{
+        width: auto;
+        transition: transform .5s;
+    }
+}
+@media only screen and (min-width: 840px) {
+    .navbar{
+        display: flex;
+    }
+    .desktopbtn{
+        display: block;
+    }
+    #muesosans{
+        width: auto;
+    }
+    #muesosansbtn{
+        width: auto;
+        padding: 0.6rem 4rem 0.6rem 4rem;
+    }
+    #menu{
+        width: auto;
+        display: none;
+    }
+    .navsec1{
+        width: 70%;
+        border: none;
+    }
+    .navbar{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navlistitem{
+        padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+        margin-right: 0.2rem;
+    }
+    .maingrid{
+        display: grid;
+        grid-template-columns: auto 35% 35%;
+        grid-template-rows: auto auto;
+    }
+    #grid-item-1{
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #grid-item-2{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+  }
